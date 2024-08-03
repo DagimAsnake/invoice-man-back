@@ -27,22 +27,29 @@ cd invoice-management-system
 2. Install the dependencies:
 
 npm install
-# or
+or
 yarn install
+
+## Configuration
 
 3. Configuration
 
 touch .env
+
 Add the following environment variables to the .env file:
 JWT_KEY="your-secret-key"
 DATABASE_URL="your-database-url"
 
+## Running the Application
+
 4. Running the Application
 
 npx prisma generate
+
 npx prisma migrate dev
+
 npm run dev
-# or
+or
 yarn dev
 
 
